@@ -15,12 +15,12 @@ function App() {
 
   useEffect(() => {
     fetch(`${SERVER_URL}/api/hello`)
-      .then(response => response.text())
+      .then(response => response.body())
       .then(data => {
         // console.log(data);
         setTimeout(
           () => {
-            setMessage(data);
+            setMessage(data.message);
           }
           , 1000);
       });

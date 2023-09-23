@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.http.ResponseEntity;
 
 @RestController
 @RequestMapping("/hello")
@@ -12,6 +13,7 @@ public class HelloController {
 
     @GetMapping
     public String hello(HttpServletRequest request) {
-        return request.getRemoteAddr();
+
+        return ResponseEntity.ok().body(new HelloResponse(request.getRemoteAddr()));
     }
 }
