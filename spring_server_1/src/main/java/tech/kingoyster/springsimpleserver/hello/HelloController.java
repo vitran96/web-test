@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 public class HelloController {
 
     @GetMapping
-    public String hello(HttpServletRequest request) {
+    public ResponseEntity<HelloResponse> hello(HttpServletRequest request) {
 
         return ResponseEntity.ok().body(new HelloResponse(request.getRemoteAddr()));
     }
