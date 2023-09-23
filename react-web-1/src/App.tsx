@@ -1,18 +1,38 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+const SERVER_URL = import.meta.env.DEV ?
+  'http://localhost:8080' :
+  '';
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [message, setMessage] = useState('Loading');
+
+  // console.log(`${SERVER_URL}/api/hello`)
+
+  useEffect(() => {
+    fetch(`${SERVER_URL}/api/hello`)
+      .then(response => response.text())
+      .then(data => {
+        // console.log(data);
+        setTimeout(
+          () => {
+            setMessage(data);
+          }
+          , 1000);
+      });
+  }, []);
 
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
+        <a href="https://vitejs.dev" target="_blank" rel="noopener">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank" rel="noopener">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
@@ -28,6 +48,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <p>Message from server: {message}</p>
     </>
   )
 }

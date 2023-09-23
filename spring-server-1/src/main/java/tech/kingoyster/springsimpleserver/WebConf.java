@@ -13,8 +13,17 @@ public class WebConf implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**")
-                .allowedOrigins("http://localhost:5173");
+        registry
+                .addMapping("/**")
+                // .addMapping("/api/**") // CORS error??
+                .allowedOrigins("*")
+                // .allowedOrigins("http://localhost:5173")
+                // .allowedOrigins("http://127.0.0.1:5173")
+                .allowedMethods("*")
+                .allowedHeaders("*")
+                .exposedHeaders("Access-Control-Allow-Origin", "Access-Control-Allow-Credentials")
+                .allowCredentials(false)
+                .maxAge(3600);
     }
 
     // We can either use this or
