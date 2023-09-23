@@ -1,0 +1,33 @@
+# EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
+# For more information about the properties used in this file, please see https://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Set default charset
+[*]
+charset = utf-8
+
+# Set default end-of-line character
+[*]
+end_of_line = lf
+
+# Set default indentation style and size
+[*]
+indent_style = space
+indent_size = 4
+
+[*.md,*.js,*.jsx,*.ts,*.tsx,*.json,*.xml]
+indent_size = 2
+
+# Set default max line length
+[*]
+max_line_length = 120
+
+# Ignore whitespace at the end of lines
+[*]
+trim_trailing_whitespace = true
+
+# Ensure files end with a newline
+[*]
+insert_final_newline = true
