@@ -12,8 +12,8 @@ import org.springframework.http.ResponseEntity;
 public class HelloController {
 
     @GetMapping
-    public ResponseEntity<HelloResponse> hello(HttpServletRequest request) {
+    public ResponseEntity<HelloMessage> hello(HttpServletRequest request) {
 
-        return ResponseEntity.ok().body(new HelloResponse(request.getRemoteAddr()));
+        return ResponseEntity.ok().body(new HelloMessage(request.getRemoteAddr()));
     }
 }

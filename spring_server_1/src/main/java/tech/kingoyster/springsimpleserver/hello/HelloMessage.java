@@ -1,6 +1,6 @@
 package tech.kingoyster.springsimpleserver.hello;
 
-public class HelloResponse {
+public class HelloMessage {
 
     private String message;
 
@@ -13,11 +13,11 @@ public class HelloResponse {
         return this.message;
     }
 
-    public HelloResponse(String message) {
+    public HelloMessage(String message) {
         this.message = message;
     }
 
-    public HelloResponse() {
+    public HelloMessage() {
         this.message = "Hello, World!";
     }
 
