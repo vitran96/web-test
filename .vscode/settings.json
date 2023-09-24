@@ -1,5 +1,6 @@
 {
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
-    "editor.defaultFormatter": "EditorConfig.EditorConfig"
+    "editor.defaultFormatter": "EditorConfig.EditorConfig",
+    "java.configuration.updateBuildConfiguration": "automatic"
 }
