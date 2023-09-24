@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     fetch(`${SERVER_URL}/api/hello`)
-      .then(response => response.body())
+      .then(response => response.json())
       .then(data => {
         // console.log(data);
         setTimeout(
