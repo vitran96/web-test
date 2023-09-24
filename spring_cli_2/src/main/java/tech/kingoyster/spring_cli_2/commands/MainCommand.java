@@ -6,7 +6,7 @@ import picocli.CommandLine.Command;
 
 @Component
 @Command(name = "", hidden = true, sortOptions = false, subcommands = {
-        TestCommand.class
+        TestCommand.class, HelloCommand.class
 }, description = "Main")
 public class MainCommand {
 
