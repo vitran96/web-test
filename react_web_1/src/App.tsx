@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 const SERVER_URL = import.meta.env.DEV ?
-  'http://localhost:8080' :
+  'http://127.0.0.1:8081/api' :
   '';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
   // console.log(`${SERVER_URL}/api/hello`)
 
   useEffect(() => {
-    fetch(`${SERVER_URL}/api/hello`)
+    fetch(`${SERVER_URL}/hello`)
       .then(response => response.json())
       .then(data => {
         // console.log(data);
