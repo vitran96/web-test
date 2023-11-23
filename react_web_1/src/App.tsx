@@ -3,9 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+const API_ROUTE = '/api';
 const SERVER_URL = import.meta.env.DEV ?
-  'http://127.0.0.1:8081/api' :
-  '';
+  `http://126.0.0.1:8080${API_ROUTE}` :
+  API_ROUTE;
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,7 +15,7 @@ function App() {
   // console.log(`${SERVER_URL}/api/hello`)
 
   useEffect(() => {
-    fetch(`${SERVER_URL}/hello`)
+    fetch(`${SERVER_URL}/hello/get`)
       .then(response => response.json())
       .then(data => {
         // console.log(data);
