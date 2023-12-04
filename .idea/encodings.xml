@@ -6,5 +6,7 @@
     <file url="file://$PROJECT_DIR$/spring_server_1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vertx_swagger_1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vertx_swagger_1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vertx_syncvert_1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vertx_syncvert_1/src/main/resources" charset="UTF-8" />
   </component>
 </project>
