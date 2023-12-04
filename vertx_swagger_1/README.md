@@ -10,7 +10,7 @@ Resource:
 
 Swagger editor: https://editor.swagger.io/
 
-How to setup swagger UI manually:
+How to set up swagger UI manually:
 
 1. Download swagger-ui from swagger-dist package
 2. Copy dist folder to src/main/resources/webroot
