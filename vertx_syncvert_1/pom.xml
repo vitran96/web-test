@@ -50,7 +50,7 @@
     <dependency>
       <groupId>co.paralleluniverse</groupId>
       <artifactId>quasar-core</artifactId>
-      <version>0.8.0</version>
+      <version>0.7.9</version>
     </dependency>
 
 
@@ -127,7 +127,7 @@
       <plugin>
         <groupId>com.vlkan</groupId>
         <artifactId>quasar-maven-plugin</artifactId>
-        <version>0.7.3</version>
+        <version>0.7.9</version>
         <configuration>
           <check>true</check>
           <debug>true</debug>
@@ -148,7 +148,7 @@
           <dependency>
             <groupId>co.paralleluniverse</groupId>
             <artifactId>quasar-core</artifactId>
-            <version>0.8</version>
+            <version>0.7.9</version>
           </dependency>
         </dependencies>
       </plugin>

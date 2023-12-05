@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="vertx_swagger_1" />
+        <module name="vert-sync-1" />
         <module name="vert-sync" />
         <module name="springcli1" />
         <module name="spring_cli_2" />
