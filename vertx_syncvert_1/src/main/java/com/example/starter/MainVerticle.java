@@ -28,7 +28,7 @@ public class MainVerticle extends SyncVerticle {
 
       System.out.println("HTTP server started on port " + server.actualPort());
 
-      startPromise.complete();
+//      startPromise.complete();
     } catch (Exception e) {
       System.out.println("Failed to start server");
 //      e.printStackTrace();
