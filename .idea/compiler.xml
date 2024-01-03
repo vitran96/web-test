@@ -17,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="starter" target="11" />
+      <module name="vert-sync" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
