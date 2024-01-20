@@ -47,11 +47,12 @@
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/co.paralleluniverse/quasar-core -->
-    <!--    <dependency>-->
-    <!--      <groupId>co.paralleluniverse</groupId>-->
-    <!--      <artifactId>quasar-core</artifactId>-->
-    <!--      <version>0.7.9</version>-->
-    <!--    </dependency>-->
+    <dependency>
+      <groupId>co.paralleluniverse</groupId>
+      <artifactId>quasar-core</artifactId>
+      <version>0.7.10</version>
+      <classifier>jdk8</classifier>
+    </dependency>
 
 
     <dependency>
@@ -79,7 +80,9 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven-compiler-plugin.version}</version>
         <configuration>
-          <release>11</release>
+          <!--          <release>11</release>-->
+          <source>8</source>
+          <target>8</target>
         </configuration>
       </plugin>
       <plugin>
@@ -148,7 +151,8 @@
           <dependency>
             <groupId>co.paralleluniverse</groupId>
             <artifactId>quasar-core</artifactId>
-            <version>0.7.9</version>
+            <version>0.7.10</version>
+            <classifier>jdk8</classifier>
           </dependency>
         </dependencies>
       </plugin>
