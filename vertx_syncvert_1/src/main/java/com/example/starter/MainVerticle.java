@@ -10,6 +10,14 @@ import io.vertx.core.http.HttpServerRequest;
 import io.vertx.ext.sync.Sync;
 import io.vertx.ext.sync.SyncVerticle;
 
+/**
+ * To make Sync vertx work
+ * <ol>
+ *   <li>extends SyncVerticle</li>
+ *   <li>use Sync.fiberHandler specially when working with Sync.await...</li>
+ *   <li>remember to add @Suspendable although I am not sure what it is for yet</li>
+ * </ol>
+ */
 public class MainVerticle extends SyncVerticle {
 
   public static void main(String[] args) {
